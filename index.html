@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AutoEltoni</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #0e0e0e;
+    color: #ffffff;
+    scroll-behavior: smooth;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 20px 60px;
+    background: rgba(0,0,0,0.85);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.logo span {
+    color: #e10600;
+}
+
+nav a {
+    margin-left: 25px;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #e10600;
+}
+
+.hero {
+    height: 100vh;
+    background: linear-gradient(to right, #000, #111);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 48px;
+}
+
+.hero p {
+    margin-top: 15px;
+    font-size: 18px;
+    opacity: 0.85;
+}
+
+.hero button {
+    margin-top: 30px;
+    padding: 14px 35px;
+    background: #e10600;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.hero button:hover {
+    background: #ff1e1e;
+}
+
+section {
+    padding: 100px 60px;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 60px;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.service-card {
+    background: #151515;
+    padding: 30px;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+}
+
+.service-card h3 {
+    color: #e10600;
+    margin-bottom: 15px;
+}
+
+.about {
+    background: #111;
+    text-align: center;
+}
+
+.contact-form {
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 12px;
+    background: #151515;
+    border: none;
+    color: white;
+}
+
+.contact-form button {
+    padding: 14px;
+    background: #e10600;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    background: #000;
+}
+
+.fade {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: 1s;
+}
+
+.fade.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">AutoEltoni<span><br>Detailing & Painting</span></div>
+    <nav>
+        <a href="#home">Hyrja</a>
+        <a href="#services">Shërbimet</a>
+        <a href="#about">Rreth Nesh</a>
+        <a href="#address">Adresa</a>
+        <a href="#contact">Kontakt</a>
+    </nav>
+</header>
+
+<section class="hero" id="home">
+    <div>
+        <h1 class="fade">Perfeksion në Çdo Detaj</h1>
+        <p class="fade">AutoEltoni Detailing & Painting profesional për makinën tuaj</p>
+    </div>
+</section>
+
+<section id="services">
+    <h2 class="section-title fade">Shërbimet Tona</h2>
+
+    <div class="services-grid">
+        <div class="service-card fade">
+            <h3>Auto Detailing</h3>
+            <p>Pastrimi i thellë i brendshëm dhe i jashtëm me produkte premium.</p>
+        </div>
+
+        <div class="service-card fade">
+            <h3>Paint Correction</h3>
+            <p>Rikthim i shkëlqimit dhe eliminim i gërvishtjeve.</p>
+        </div>
+
+        <div class="service-card fade">
+            <h3>Painting</h3>
+            <p>Lyerje profesionale me precizion maksimal.</p>
+            </div>
+
+            <div class="service-card fade">
+                <h3>Polish</h3>
+                <p>Bejm polir te leht, mesatar dhe te fort.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="about" id="about">
+    <h2 class="section-title fade">Pse Ne?</h2>
+    <p class="fade">
+        Me përvojë, pasion dhe teknologji moderne, ne kujdesemi për çdo detaj
+        të makinës suaj duke garantuar cilësi dhe rezultat afatgjatë!
+    </p>
+</section>
+
+<section class="about" id="address">
+      <h2 class="section-title fade">Adresa</h2>
+
+      <form class="fade">
+           <p>Ndodhemi ne: Lipjan, Rruga: Ibrahim Rugova ne drejtim te Shtimes!</p>
+      </form>
+</section>
+
+<section id="contact">
+    <h2 class="section-title fade">Na Kontaktoni</h2>
+
+    <form class="contact-form fade">
+        <h1>Per rezervime na kontaktoni ne numrin e telefonit: WhatsApp/Viber: <br>+383 43 880 266</h1>
+    </form>
+</section>
+
+<footer>
+    <p>&copy; 2026 AutoEltoni Detailing & Painting – Të gjitha të drejtat e rezervuara</p>
+</footer>
+
+<script>
+
+const elements = document.querySelectorAll(".fade");
+
+window.addEventListener("scroll", () => {
+    elements.forEach(el => {
+        const position = el.getBoundingClientRect().top;
+        if (position < window.innerHeight - 100) {
+            el.classList.add("show");
+        }
+    });
+});
+
+document.querySelector(".contact-form").addEventListener("submit", e => {
+    e.preventDefault();
+    alert("Mesazhi u dërgua me sukses!");
+});
+</script>
+
+</body>
+</html>
